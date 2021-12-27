@@ -2,4 +2,4 @@
 - 👀 Ik hou van gamen en daarintegen ook programmeren!
 - 🌱 Ik leer op het moment HTML, JS en nog een klein beetje Java!
 - 💞️ Mijn huidige programmeertalen zijn: C#, Java en Lua!
-- 📫 Stuur mij een berichtje op mijn discord! Ties#3028
+- 📫 Stuur mij een berichtje op mijn discord! Willem#7741
