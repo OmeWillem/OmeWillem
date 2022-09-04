@@ -1,5 +1,5 @@
 - 👋 Hey, Ik ben @OmeWillem
 - 👀 Ik hou van gamen en daarintegen ook programmeren!
-- 🌱 Ik leer op het moment HTML en nog een klein beetje Java!
+- 🌱 Ik leer op het moment C++!
 - 💞️ Mijn huidige programmeertalen zijn: C#, JS, Java en Lua!
-- 📫 Stuur mij een berichtje op mijn discord! Willem#7741
+- 📫 Stuur mij een berichtje op mijn discord! Willem#5691
