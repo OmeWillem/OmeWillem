@@ -1,9 +1,5 @@
 [{
 	"title": "Vehicles",
 	"description": "Vehicles is een plugin gemaakt door mij voor een anonieme server, deze vehicle plugin probeert zo realistisch mogelijk voertuigen na te bootsen in Minecraft doormiddel van een plugin.",
-	"image": "https://i.gyazo.com/7f473a5ab63554885bc094f545a3750b.png",
-	"source": "https://github.com/OmeWillem/RemakeVoertuigen"
-}, {
-	"title": "Ik heb eigenlijk niets anders.",
-	"description": "Of nou ja, heb ik wel maar ben te dom."
+	"image": "https://i.gyazo.com/7f473a5ab63554885bc094f545a3750b.png"
 }]
