@@ -39,7 +39,7 @@ echo "Creating directory"
 mkdir /etc/ssl/$DOMAIN
 
 echo "Creating SSL certificate for $DOMAIN"
-acme.sh --issue --dns dns_cf -d "$DOMAIN" \
+acme.sh --issue --dns dns_cf -d "$DOMAIN" --force \
 --key-file /etc/ssl/$DOMAIN/privkey.pem \
 --fullchain-file /etc/ssl/$DOMAIN/fullchain.pem
 
@@ -49,4 +49,4 @@ ln -s $CONFIG_FILE /etc/nginx/sites-enabled/reverse_$DOMAIN.conf
 echo "Restarting nginx"
 service nginx restart
 
-echo "No errors holy shit! Should be running now on: $DOMAIN"
+echo "Should be running now on: $DOMAIN"
