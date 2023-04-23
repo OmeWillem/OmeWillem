@@ -5,6 +5,8 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
+echo "MADE BY OMEWILLEM OFC OFC"
+
 read -p "Enter your domain name: " DOMAIN
 PUBLIC_IP=$(curl -s https://api.ipify.org)
 read -p "Enter the IP address of your VPS [$PUBLIC_IP]: " IP
