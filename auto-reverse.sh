@@ -1,19 +1,16 @@
 #!/bin/bash
 
-# Check if the script is being run as root
 if [ "$EUID" -ne 0 ]
   then echo "Please run this as root user."
   exit
 fi
 
-# Define variables
 read -p "Enter your domain name: " DOMAIN
 PUBLIC_IP=$(curl -s https://api.ipify.org)
 read -p "Enter the IP address of your VPS [$PUBLIC_IP]: " IP
 IP=${IP:-$PUBLIC_IP}
 read -p "Enter the port number: " PORT
 
-# Create the nginx config file
 CONFIG_FILE="/etc/nginx/sites-available/reverse_$DOMAIN.conf"
 echo "Creating nginx config file at $CONFIG_FILE"
 cat > $CONFIG_FILE <<EOL
@@ -27,8 +24,8 @@ server {
     listen 443 ssl http2;
     server_name $DOMAIN;
 
-    ssl_certificate /etc/letsencrypt/live/$DOMAIN/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/$DOMAIN/privkey.pem;
+    ssl_certificate /etc/ssl/$DOMAIN/fullchain.pem;
+    ssl_certificate_key /ssl/live/$DOMAIN/privkey.pem;
 
     location / {
         proxy_pass http://$IP:$PORT/;
@@ -36,17 +33,17 @@ server {
 }
 EOL
 
-# Create the SSL certificate
+echo "Creating directory"
+mkdir /etc/ssl/$DOMAIN
+
 echo "Creating SSL certificate for $DOMAIN"
 acme.sh --issue --dns dns_cf -d "$DOMAIN" \
---key-file /etc/letsencrypt/live/$DOMAIN/privkey.pem \
---fullchain-file /etc/letsencrypt/live/$DOMAIN/fullchain.pem
+--key-file /etc/ssl/$DOMAIN/privkey.pem \
+--fullchain-file /etc/ssl/$DOMAIN/fullchain.pem
 
-# Create a symbolic link to the config file
-echo "Creating symbolic link to config file"
+echo "Copying over to other directory"
 ln -s $CONFIG_FILE /etc/nginx/sites-enabled/reverse_$DOMAIN.conf
 
-# Restart nginx
 echo "Restarting nginx"
 service nginx restart
 
