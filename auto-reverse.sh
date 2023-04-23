@@ -27,7 +27,7 @@ server {
     server_name $DOMAIN;
 
     ssl_certificate /etc/ssl/$DOMAIN/fullchain.pem;
-    ssl_certificate_key etc/ssl/live/$DOMAIN/privkey.pem;
+    ssl_certificate_key etc/ssl/$DOMAIN/privkey.pem;
 
     location / {
         proxy_pass http://$IP:$PORT/;
