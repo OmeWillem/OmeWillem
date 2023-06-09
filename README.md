@@ -2,4 +2,4 @@
 - 👀 Ik hou van gamen en daarintegen ook programmeren!
 - 🌱 Ik leer op het moment C++!
 - 💞️ Mijn huidige programmeertalen zijn: C#, JS, Java en Lua!
-- 📫 Stuur mij een berichtje op mijn discord! Willem#5691
+- 📫 Stuur mij een berichtje op mijn discord! De naam is "willem.dev"
