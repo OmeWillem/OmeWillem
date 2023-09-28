@@ -1,4 +1,4 @@
-- 👋 Hey, Ik ben @OmeWillem en ik ben 14 jaar oud.
+- 👋 Hey, Ik ben @OmeWillem.
 - 👀 Ik hou van gamen en daarintegen ook programmeren!
 - 🌱 Ik leer op het moment C++!
 - 💞️ Mijn huidige programmeertalen zijn: C#, JS, Java en Lua!
