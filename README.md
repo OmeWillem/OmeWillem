@@ -1,5 +1,5 @@
-- 👋 Hey, Ik ben @OmeWillem.
-- 👀 Ik ben een fanatieke programmeur met kennis in front- en backend.
-- 🌱 Ik hou mij op dit moment bezig met Modded Spigot Development (resourcepack development) in Minecraft.
-- 💞️ Mijn huidige programmeertalen zijn: C#, JS, Java, Markup en Lua!
-- 📫 Stuur mij een berichtje op mijn discord! De naam is "willem.dev"
+- 👋 Hey, My name is @OmeWillem.
+- 👀 I'm a experienced programmer with knowledge of front- and backend.
+- 🌱 Modded Spigot Development (also known as Resourcepack Development) is my main fixation at the moment.
+- 💞️ I'm experienced with these programming languages: C#, JS, Java, Markup en Lua!
+- 📫 You can send me a message on Discord! My tag is "willem.dev"
